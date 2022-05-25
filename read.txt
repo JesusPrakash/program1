@@ -1,2 +1,104 @@
-cvbccbcv
-gfjfgj
+shiva@DESKTOP-6SP75D9 MINGW64 /e/program1/program1 (main)
+$ git init
+Reinitialized existing Git repository in E:/program1/program1/.git/
+
+shiva@DESKTOP-6SP75D9 MINGW64 /e/program1/program1 (main)
+$ git remote add origin git@github.com:JesusPrakash/program1.git
+error: remote origin already exists.
+
+shiva@DESKTOP-6SP75D9 MINGW64 /e/program1/program1 (main)
+$ git remote add origin https://github.com/JesusPrakash/program1.git
+error: remote origin already exists.
+
+shiva@DESKTOP-6SP75D9 MINGW64 /e/program1/program1 (main)
+$ git remote add origin https://github.com/JesusPrakash/program1.git
+error: remote origin already exists.
+
+shiva@DESKTOP-6SP75D9 MINGW64 /e/program1/program1 (main)
+$ git remote -v
+origin  https://github.com/JesusPrakash/program1.git (fetch)
+origin  https://github.com/JesusPrakash/program1.git (push)
+
+shiva@DESKTOP-6SP75D9 MINGW64 /e/program1/program1 (main)
+$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+shiva@DESKTOP-6SP75D9 MINGW64 /e/program1/program1 (main)
+$ git commit -m "First commit
+>
+>
+>
+>
+>
+>
+> "
+On branch main
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+shiva@DESKTOP-6SP75D9 MINGW64 /e/program1/program1 (main)
+$ git add read.txt
+fatal: pathspec 'read.txt' did not match any files
+
+shiva@DESKTOP-6SP75D9 MINGW64 /e/program1/program1 (main)
+$ git add read.txt
+
+shiva@DESKTOP-6SP75D9 MINGW64 /e/program1/program1 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   read.txt
+
+
+shiva@DESKTOP-6SP75D9 MINGW64 /e/program1/program1 (main)
+$ git commit -m "First commit"
+[main (root-commit) c54487a] First commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 read.txt
+
+shiva@DESKTOP-6SP75D9 MINGW64 /e/program1/program1 (main)
+$ git status
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+shiva@DESKTOP-6SP75D9 MINGW64 /e/program1/program1 (main)
+$ git push
+remote: Permission to JesusPrakash/program1.git denied to hit13.
+fatal: unable to access 'https://github.com/JesusPrakash/program1.git/': The requested URL returned error: 403
+
+shiva@DESKTOP-6SP75D9 MINGW64 /e/program1/program1 (main)
+$ git add read.txt
+
+shiva@DESKTOP-6SP75D9 MINGW64 /e/program1/program1 (main)
+$ git commit -m "First commit"
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+shiva@DESKTOP-6SP75D9 MINGW64 /e/program1/program1 (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 231 bytes | 231.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/JesusPrakash/program1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+shiva@DESKTOP-6SP75D9 MINGW64 /e/program1/program1 (main)
+$
